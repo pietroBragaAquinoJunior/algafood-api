@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 import com.algaworks.algafood.entities.Cliente;
 import com.algaworks.algafood.notifications.Notificador;
 
-@Component
 public class AtivacaoClienteService {
 
 	@Autowired
