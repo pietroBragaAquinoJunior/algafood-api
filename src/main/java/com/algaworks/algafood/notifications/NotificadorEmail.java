@@ -2,15 +2,16 @@ package com.algaworks.algafood.notifications;
 
 import com.algaworks.algafood.entities.Cliente;
 
+//@Component
 public class NotificadorEmail implements Notificador {
 	
 	private boolean caixaAlta;
 	private String hostServidorSmtp;
 	
-	public NotificadorEmail(String hostServidorSmtp) {
-		this.hostServidorSmtp = hostServidorSmtp;
-		System.out.println("NotificadorEmail");
-	}
+//	public NotificadorEmail(String hostServidorSmtp) {
+//		this.hostServidorSmtp = hostServidorSmtp;
+//		System.out.println("NotificadorEmail");
+//	}
 
 	@Override
 	public void notificar(Cliente cliente, String mensagem) {
