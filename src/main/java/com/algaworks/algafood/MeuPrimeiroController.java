@@ -1,5 +1,6 @@
 package com.algaworks.algafood;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,6 +10,7 @@ import com.algaworks.algafood.services.AtivacaoClienteService;
 @RestController
 public class MeuPrimeiroController {
 	
+	@Autowired
 	private AtivacaoClienteService ativacaoClienteService;
 	
 	public MeuPrimeiroController(AtivacaoClienteService ativacaoClienteService) {
