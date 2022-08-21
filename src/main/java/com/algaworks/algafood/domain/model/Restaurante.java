@@ -27,12 +27,14 @@ public class Restaurante implements Serializable {
 	@EqualsAndHashCode.Include
 	private Long id;
 	
+	@Column(nullable=false)
 	private String nome;
 	
-	@Column(name="taxa_frete")
+	@Column(name="taxa_frete",nullable=false)
 	private BigDecimal taxaFrete;
 	
 	@ManyToOne
+	@Column(nullable=false)
 	Cozinha cozinha;
 	
 }
