@@ -29,7 +29,7 @@ public class Cozinha implements Serializable {
 		this.id = id;
 	}
 
-	public String getName() {
+	public String getNome() {
 		return nome;
 	}
 
