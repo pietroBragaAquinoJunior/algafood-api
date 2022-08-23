@@ -25,8 +25,6 @@ public class Cozinha implements Serializable {
 	@EqualsAndHashCode.Include
 	private Long id;
 
-//	@JsonIgnore
-//	@JsonProperty("titulo")
 	@Column(nullable=false)
 	private String nome;
 
